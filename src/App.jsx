@@ -11,8 +11,10 @@ import Footer from "./components/Footer"
 const App = () => {
   return (
     <>
+      <div className="relative top-0 max-w-full">
+      <Header /> 
+      </div>
       <div className="pt-[4.75rem] md:pt-[5.25rem]">
-        <Header /> 
         <Hero />
         <Benefits />
         <Collaboration />
