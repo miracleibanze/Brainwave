@@ -1,4 +1,4 @@
-import benefitgradient from './benefits/gradient.png'
+import benefitgradient from "./benefits/gradient.png";
 import brainwave from "./brainwave.svg";
 import check from "./check.svg";
 import brainwaveSymbol from "./brainwave-symbol.svg";
