@@ -26,6 +26,11 @@ import curve from "./hero/curve.png";
 import robot from "./hero/robot.jpg";
 import heroBackground from "./hero/hero-background.jpg";
 
+import logo1 from "./hero/logowhite.png";
+import logo2 from "./hero/logo.png";
+import logo3 from "./hero/logo.bd92dca7.png";
+import logo4 from "./hero/logo_funnyordie.png";
+
 import curve1 from "./collaboration/curve-1.svg";
 import curve2 from "./collaboration/curve-2.svg";
 import discord from "./collaboration/discord.png";
@@ -103,6 +108,10 @@ export {
   curve,
   robot,
   heroBackground,
+  logo1,
+  logo2,
+  logo3,
+  logo4,
   curve1,
   curve2,
   discord,

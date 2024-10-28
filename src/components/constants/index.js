@@ -14,6 +14,10 @@ import {
   framer,
   homeSmile,
   instagram,
+  logo1,
+  logo2,
+  logo3,
+  logo4,
   notification2,
   notification3,
   notification4,
@@ -40,33 +44,27 @@ export const navigation = [
   {
     id: "0",
     title: "Features",
-    url: "#features",
   },
   {
     id: "1",
-    title: "Pricing",
-    url: "#pricing",
+    title: "How to use",
   },
   {
     id: "2",
-    title: "How to use",
-    url: "#how-to-use",
+    title: "Pricing",
   },
   {
     id: "3",
     title: "Roadmap",
-    url: "#roadmap",
   },
   {
     id: "4",
     title: "New account",
-    url: "#signup",
     onlyMobile: true,
   },
   {
     id: "5",
     title: "Sign in",
-    url: "#login",
     onlyMobile: true,
   },
 ];
@@ -75,7 +73,7 @@ export const heroIcons = [homeSmile, file02, searchMd, plusSquare];
 
 export const notificationImages = [notification4, notification3, notification2];
 
-export const companyLogos = [yourlogo, yourlogo, yourlogo, yourlogo, yourlogo];
+export const companyLogos = [logo1, logo2, logo3, logo4];
 
 export const brainwaveServices = [
   "Photo generating",

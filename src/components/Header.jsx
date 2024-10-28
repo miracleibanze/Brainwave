@@ -6,6 +6,7 @@ import HamburgerMenu from "./designs/HamburgerMenu";
 import BackgroundCircles from "./designs/BackgroundCircles";
 import { Link } from "react-scroll";
 import Rings from "./designs/Rings";
+import { navigation } from "./constants";
 const Header = () => {
   const [openNavigation, setOpenNavigation] = useState(false);
 
@@ -47,37 +48,21 @@ const Header = () => {
           openNavigation ? "flex" : "hidden"
         } fixed top-[3.8rem] left-0 right-0 bottom-0 bg-n-8 lg:static lg:flex lg:mx-auto lg:bg-transparent`}
       >
-        <div className="relative z-2 flex flex-col items-center justify-center mx-auto lg:flex-row lg:items-center">
-          <Link to="features" smooth={true} className="m-0 p-0">
-            <a href="#feature" onClick={handleClick}>
-              Features
-            </a>
-          </Link>
-          <Link to="pricing" smooth={true} className="m-0 p-0">
-            <a href="#pricing" onClick={handleClick}>
-              Pricings
-            </a>
-          </Link>
-          <Link to="how-to-use" smooth={true} className="m-0 p-0">
-            <a href="#how-to-use" onClick={handleClick}>
-              How to use
-            </a>
-          </Link>
-          <Link to="road-map" smooth={true} className="m-0 p-0">
-            <a href="#road-map" onClick={handleClick}>
-              Road map
-            </a>
-          </Link>
-          <Link to="newaccount" smooth={true} className="m-0 p-0">
-            <a href="#newaccount" className="onlyMobile">
-              New account
-            </a>
-          </Link>
-          <Link to="login" smooth={true} className="m-0 p-0">
-            <a href="#login" className="onlyMobile">
-              Sign in
-            </a>
-          </Link>
+        <div className="relative z-2 flex flex-col items-center justify-center mx-auto lg:flex-row lg:items-center gap-3">
+          {navigation.map((item) => (
+            <Link
+              to={item.title}
+              smooth={true}
+              spy={true}
+              offset={-100}
+              duration={500}
+              className={`m-0 p-0 ${item.onlyMobile && "onlyMobile"}`}
+              key={item.id}
+              onClick={handleClick}
+            >
+              {item.title}
+            </Link>
+          ))}
           <div className="absolute w-screen h-screen max-lg:flex hidden -z-5">
             <BackgroundCircles />
             <Rings />
